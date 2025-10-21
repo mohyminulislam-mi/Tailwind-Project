@@ -16,9 +16,9 @@
 <body>
     <header>
         <nav class="bg-green-700">
-            <div class="navbar w-11/12 mx-auto bg-base-100 shadow-sm bg-green-700 container">
+            <div class="navbar w-11/12 mx-auto bg-base-100 bg-green-700 container ">
                 <div class="navbar-start">
-                    <div class="dropdown">
+                    <div class="dropdown z-50">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
@@ -33,7 +33,7 @@
                             <li><a>Plant a Tree</a></li>
                         </ul>
                     </div>
-                    <a class="text-2xl text-white md:text-1xl">Green Eaarth</a>
+                    <a class=" text-white text-lg lg:text-3xl">Green Eaarth</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -51,8 +51,8 @@
         <div class="bg-[#CFF0DC] py-6 lg:py-0">
             <div class=" w-11/12 mx-auto">
                 <div class="flex justify-center items-center relative">
-                    <div class="absolute top-0 left-0"><img src="assets/hero-leaf1.png"></div>
-                    <div class="z-50 flex flex-col justify-center items-center lg:p-[104px]">
+                    <div class="absolute top-0 left-0 lg:block hidden"><img src="assets/hero-leaf1.png"></div>
+                    <div class="z-40 flex flex-col justify-center items-center lg:p-[104px]">
                         <h1 class="text-4xl font-semibold p-3 text-center">Plant a Tree, Grow a Future</h1>
                         <p class="font-medium text-center p-3 text-[#404040]">Join our mission to plant 1 million trees
                             and make the
@@ -60,11 +60,200 @@
                             future <br> generations.</p>
                         <button class="btn btn-warning br-4 br-radius">Get Involved</button>
                     </div>
-                    <div class="absolute top-0 right-0"><img src="assets/hero-leaf2.png"></div>
+                    <div class="absolute top-0 right-0 lg:block hidden"><img src="assets/hero-leaf2.png"></div>
                 </div>
             </div>
         </div>
     </header>
+    <!-- main content start here  -->
+    <main class="bg-[#F0FDF4]">
+        <section class="w-11/12 mx-auto">
+            <h1 class="text-2xl font-semibold text-center p-10">Choose Your Trees</h1>
+            <div class="grid lg:grid-cols-12 grid-cols-1 gap-10">
+                <div class="lg:col-span-2 ">
+                    <h3 class="font-bold text-center ">Categories</h3>
+                    <div id="categories" class="flex flex-col items-center">
+                        <button
+                            class="btn bg-[#F0FDF4] border-none w-full hover:bg-green-600 hover:text-white mt-3 text-base">Fruit
+                            Tree</button>
+                        <button
+                            class="btn bg-[#F0FDF4] border-none w-full hover:bg-green-600 hover:text-white mt-3 text-base">Flowering
+                            Tree</button>
+                        <button
+                            class="btn bg-[#F0FDF4] border-none w-full hover:bg-green-600 hover:text-white mt-3 text-base">Shade
+                            Tree</button>
+                        <button
+                            class="btn bg-[#F0FDF4] border-none w-full hover:bg-green-600 hover:text-white mt-3 text-base">Medicinal
+                            Tree</button>
+                        <button
+                            class="btn bg-[#F0FDF4] border-none w-full hover:bg-green-600 hover:text-white mt-3 text-base">Timber
+                            Tree</button>
+                        <button
+                            class="btn bg-[#F0FDF4] border-none w-full hover:bg-green-600 hover:text-white mt-3 text-base">Evergreen
+                            Tree</button>
+                        <button
+                            class="btn bg-[#F0FDF4] border-none w-full hover:bg-green-600 hover:text-white mt-3 text-base">Ornamental
+                            Plant</button>
+                        <button
+                            class="btn bg-[#F0FDF4] border-none w-full hover:bg-green-600 hover:text-white mt-3 text-base">Bamboo</button>
+                        <button
+                            class="btn bg-[#F0FDF4] border-none w-full hover:bg-green-600 hover:text-white mt-3 text-base">Climber</button>
+                        <button
+                            class="btn bg-[#F0FDF4] border-none w-full hover:bg-green-600 hover:text-white mt-3 text-base">Aquatic
+                            Plant</button>
+                    </div>
+                </div>
+                <div class="lg:col-span-8 grid lg:grid-cols-4 gap-5">
+                    <div class="card bg-base-100 shadow-sm ">
+                        <figure class="h-43 w-full p-2">
+                            <img src="./assets/hero-leaf1.png" class="rounded-xl object-cover" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title mb-1 text-sm font-bold">tree</h2>
+                            <p class="mb-3">this is tree for save world</p>
+                            <div class="mb-3 flex justify-between items-center">
+                                <button
+                                    class="btn btn-xs btn-modal text-[#15803D] bg-[#DCFCE7] rounded-xl border-none ">category</button>
+                                <span>250tk</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn bg-green-700 text-white w-full rounded-xl">Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-base-100 shadow-sm ">
+                        <figure class="h-43 w-full p-2">
+                            <img src="./assets/hero-leaf1.png" class="rounded-xl object-cover" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title mb-1 text-sm font-bold">tree</h2>
+                            <p class="mb-3">this is tree for save world</p>
+                            <div class="mb-3 flex justify-between items-center">
+                                <button
+                                    class="btn btn-xs btn-modal text-[#15803D] bg-[#DCFCE7] rounded-xl border-none ">category</button>
+                                <span>250tk</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn bg-green-700 text-white w-full rounded-xl">Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 shadow-sm ">
+                        <figure class="h-43 w-full p-2">
+                            <img src="./assets/hero-leaf1.png" class="rounded-xl object-cover" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title mb-1 text-sm font-bold">tree</h2>
+                            <p class="mb-3">this is tree for save world</p>
+                            <div class="mb-3 flex justify-between items-center">
+                                <button
+                                    class="btn btn-xs btn-modal text-[#15803D] bg-[#DCFCE7] rounded-xl border-none ">category</button>
+                                <span>250tk</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn bg-green-700 text-white w-full rounded-xl">Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 shadow-sm">
+                        <figure class="h-43 w-full p-2">
+                            <img src="./assets/hero-leaf1.png" class="rounded-xl object-cover" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title mb-1 text-sm font-bold">tree</h2>
+                            <p class="mb-3">this is tree for save world</p>
+                            <div class="mb-3 flex justify-between items-center">
+                                <button
+                                    class="btn btn-xs btn-modal text-[#15803D] bg-[#DCFCE7] rounded-xl border-none ">category</button>
+                                <span>250tk</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn bg-green-700 text-white w-full rounded-xl">Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 shadow-sm">
+                        <figure class="h-43 w-full p-2">
+                            <img src="./assets/hero-leaf1.png" class="rounded-xl object-cover" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title mb-1 text-sm font-bold">tree</h2>
+                            <p class="mb-3">this is tree for save world</p>
+                            <div class="mb-3 flex justify-between items-center">
+                                <button
+                                    class="btn btn-xs btn-modal text-[#15803D] bg-[#DCFCE7] rounded-xl border-none ">category</button>
+                                <span>250tk</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn bg-green-700 text-white w-full rounded-xl">Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100  shadow-sm">
+                        <figure class="h-43 w-full p-2">
+                            <img src="./assets/hero-leaf1.png" class="rounded-xl object-cover" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title mb-1 text-sm font-bold">tree</h2>
+                            <p class="mb-3">this is tree for save world</p>
+                            <div class="mb-3 flex justify-between items-center">
+                                <button
+                                    class="btn btn-xs btn-modal text-[#15803D] bg-[#DCFCE7] rounded-xl border-none ">category</button>
+                                <span>250tk</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn bg-green-700 text-white w-full rounded-xl">Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100  shadow-sm">
+                        <figure class="h-43 w-full p-2">
+                            <img src="./assets/hero-leaf1.png" class="rounded-xl object-cover" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title mb-1 text-sm font-bold">tree</h2>
+                            <p class="mb-3">this is tree for save world</p>
+                            <div class="mb-3 flex justify-between items-center">
+                                <button
+                                    class="btn btn-xs btn-modal text-[#15803D] bg-[#DCFCE7] rounded-xl border-none ">category</button>
+                                <span>250tk</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn bg-green-700 text-white w-full rounded-xl">Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100  shadow-sm">
+                        <figure class="h-43 w-full p-2">
+                            <img src="./assets/hero-leaf1.png" class="rounded-xl object-cover" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title mb-1 text-sm font-bold">tree</h2>
+                            <p class="mb-3">this is tree for save world</p>
+                            <div class="mb-3 flex justify-between items-center">
+                                <button
+                                    class="btn btn-xs btn-modal text-[#15803D] bg-[#DCFCE7] rounded-xl border-none ">category</button>
+                                <span>250tk</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn bg-green-700 text-white w-full rounded-xl">Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-2 bg-white p-5">price</div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
